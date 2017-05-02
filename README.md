@@ -23,4 +23,4 @@ Feel free to fork this project and submit pull requests and your contributions w
 It is recommended you get in touch or raise an issue first to discussion your request.
 
 ## Reporting an issue or a feature request
-Issues and feature requests are tracked in the [Github issue tracker](https://github.com/DesignyourCode/wp-install/issues).
+Issues and feature requests are tracked in the [Github issue tracker](https://github.com/DesignyourCode/enterprise-integration-boilerplate/issues).
