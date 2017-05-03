@@ -1,0 +1,23 @@
+@import url('//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+// Global settings go here
+$globalId: '#project-id';
+$prefix: '.en-in-';
+
+$globalWidth: 1280px;
+
+// Fonts
+$primary-font: 'Your font name', Arial, Helvetica, sans-serif;
+
+// Colours
+$white: #ffffff;
+$black: #000000;
+$grey: #333333;
+$mid-grey: #666666;
+
+// Responsive design screen size variables
+$mobile:    400px;
+$phablet:   550px;
+$tablet:    750px;
+$desktop:   1000px;
+$desktophd: 1200px;

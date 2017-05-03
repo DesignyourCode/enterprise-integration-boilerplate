@@ -1,0 +1,29 @@
+#{$prefix}-main {
+    position: relative;
+}
+
+#{$prefix}-content {
+    margin: 0 auto;
+    max-width: $globalWidth;
+    width: 96%;
+}
+
+#{$prefix}-left {
+    float: left;
+    @include media($tablet) { float: none; }
+}
+
+#{$prefix}-right {
+    float: right;
+    @include media($tablet) { float: none; }
+}
+
+#{$prefix}-third {
+    width: 32%;
+    @include media($tablet) { width: 100%; }
+}
+
+#{$prefix}-two-thirds {
+    width: 64%;
+    @include media($tablet) { width: 100%; }
+}

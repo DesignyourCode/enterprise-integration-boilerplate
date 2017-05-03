@@ -1,0 +1,73 @@
+& * {
+    box-sizing: border-box;
+    outline: none;
+}
+
+#{$prefix}-img {
+    height: auto;
+    width: 100%;
+}
+
+#{$prefix}-video-wrapper {
+    height: 0;
+    padding-bottom: 56.25%;
+    position: relative;
+    width: 100%;
+
+    iframe, video, object, embed {
+        border: none;
+        bottom: 0;
+        left: 0;
+        height: 100%;
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 100%;
+    }
+}
+
+#{$prefix}-h1 {
+    font-size: 68px;
+    font-weight: 100;
+    margin: 0;
+    line-height: 1;
+    @include media($phablet) { font-size: 54px; }
+    @include media($mobile) { font-size: 48px; }
+}
+
+#{$prefix}-h2 {
+    font-size: 58px;
+    font-weight: 100;
+    margin: 0 0 30px 0;
+    line-height: 1;
+    @include media($phablet) { font-size: 54px; }
+    @include media($mobile) { font-size: 44px; }
+}
+
+#{$prefix}-paragraph {
+    font-size: 16px;
+    line-height: 1.2;
+}
+
+#{$prefix}-text-grey {
+    color: $grey;
+}
+
+#{$prefix}-text-center {
+    text-align: center;
+}
+
+#{$prefix}-table {
+    display: table;
+}
+
+#{$prefix}-table-cell {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+#{$prefix}-clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}

@@ -1,0 +1,17 @@
+#{$prefix}-btn {
+    background: $black;
+    border: none;
+    border-radius: 0;
+    display: inline-block;
+    color: $white;
+    cursor: pointer;
+    outline: none;
+    padding: 10px 12px;
+    text-decoration: none;
+    @include appearance(none);
+    @include transition(all .3s ease-in-out);
+
+    &:hover {
+        background: lighten($black, 10%);
+    }
+}

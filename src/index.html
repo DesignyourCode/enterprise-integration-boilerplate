@@ -1,0 +1,102 @@
+<!--<Deject>-->
+<!doctype html>
+<html>
+    <head>
+        <title>Your Title Goes Here</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0" />
+        <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+        <!--
+            You may find you need to include the CSS file from your clients system in order to test conflicts.
+            By adding the URL below and uncommenting it, you can then view the localhost to test your CSS.
+
+            REMEMBER: This will not be included in the output production file as the <Deject> tag will ensure it is removed.
+            
+            <link rel="stylesheet" href="//remoteurl.com/path/to/clients/css/global.css" />
+        -->
+
+        <!--
+            Most of the time, your client will already have their fonts set up and installed within their system.
+            If this is the case, you will only need to set up the fonts in your local copy.
+            This can be done by adding your @fontface to the fonts.scss file, and letting it compile via gulp.
+
+            REMEMBER: This will also not be included in the output production file as the <Deject> tag will ensure it is removed.
+
+            IMPORTANT: You will need to make sure, your 'font-family' name in your CSS matches what is in your clients production environment.
+        -->
+        <link rel="stylesheet" href="styles/fonts.css" />
+    </head>
+
+    <body>
+<!--</Deject>-->
+        
+        <!-- inject-style src="./dist/styles/app.css" -->
+        
+        <div id="project-id">
+            
+            <header class="cf-em--header">
+                <div class="en-in--intro">
+                    <div class="en-in--content">
+                        <h1 class="en-in--heading-h1">Heading One</h1>
+                        <p class="en-in--paragraph en-in--text-grey">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi delectus, numquam quasi esse perferendis.</p>
+                    </div>
+                </div>
+                
+                <nav class="en-in--nav">
+                    <div class="en-in--content">
+                        <a href="#" class="en-in--nav-link">Link 1</a>
+                        <a href="#" class="en-in--nav-link">Link 2</a>
+                        <a href="#" class="en-in--nav-link">Link 3</a>
+                    </div>
+                </nav>
+            </header>
+            
+            <main class="en-in--main">
+
+                <section class="en-in--section">
+                    <div class="en-in--content">
+                        <div class="en-in--left en-in--two-thirds">
+                            <h2 class="en-in--heading-h1">Heading Two</h2>
+                            <p class="en-in--paragraph en-in--text-grey">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod officia consequuntur perspiciatis asperiores.</p>
+                            <p class="en-in--paragraph en-in--text-grey">Corrupti iusto dolorum magni facere debitis quia molestias! Accusamus voluptates natus odit praesentium ratione quaerat suscipit tempora.</p>
+                            <p class="en-in--paragraph en-in--text-grey">
+                                <a href="#" class="en-in--btn">Button Example</a>
+                            </p>
+                        </div>
+
+                        <div class="en-in--right en-in--third">
+                            <aside class="en-in--aside en-in--cta en-in--bottom-border">
+                                <p class="en-in--paragraph en-in--text-grey">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi delectus, numquam quasi esse perferendis.</p>
+                            </aside>
+
+                            <aside class="en-in--aside en-in--cta en-in--bottom-border">
+                                <p class="en-in--paragraph en-in--text-grey">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi delectus, numquam quasi esse perferendis.</p>
+                            </aside>
+
+                            <aside class="en-in--aside en-in--cta">
+                                <p class="en-in--paragraph en-in--text-grey">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi delectus, numquam quasi esse perferendis.</p>
+                            </aside>
+                        </div>
+                    </div>
+                </section>
+            </main>
+
+            <footer class="en-in--footer">
+                <div class="en-in--content">
+                    <p class="en-in--paragraph en-in--copyright-text">Copyright <script>document.write(new Date().getFullYear())</script>. All Rights Reserved.</p>
+                </div>
+            </footer>
+        </div>
+        
+        <!--
+            Below, you can see we link to the minified javascript. An attribute of this is 'inline'.
+            This will inject the javascript directly into the page. Saving you from having to upload the javascript separately to the system.
+            You can simply copy and paste everything from the dist/prod/index.html file.
+        -->
+        <script type="text/javascript" src="../dist/lib/app.min.js" inline></script>
+    
+<!--<Deject>-->
+    </body>
+</html>
+<!--</Deject>-->
