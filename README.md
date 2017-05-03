@@ -180,13 +180,37 @@ This is a good question. You don't really want to write out `.en-in—` every th
 
    As you can see, the class names are slightly longer, but they clearer explain what they are doing. This will make it easy for other developers to understand what is going on, and will also make it easier for your client if they decide that want to make simple changes.
 
-   ​
+#### JavaScript
+
+In this boilerplate, I have only set up a basic gulp script for compiling simple Javascript. You will need to include your own libraries etc and handle those yourself. The script compilation should work work AngularJS also, but you will need to **test** thoroughly.
+
+> **Note:** You client likely already has jQuery or similar JavaScript libraries installed in their site, however they may not be running a version you need. In the `app.js` file I have put in some starter code for setting jQuery to 'no conflict' mode. This should help reduce risks when importing your code, into their system.
+>
+> **Ensure you test both locally, in a development environment, and in the clients system to ensure there are no conflicts**
+
+There is little else to say on JavaScript. This really comes down to what you want to achieve and is very unique to each project.
+
+
 
 ## Workflow
 
+This boilerplate functions using gulp. The main features include:
+
+1. Local static service using browser sync (to help with device testing)
+2. Compilation and minfication of SCSS and JavaScript
+3. Compilation of local version of HTML into a version which will work on a dev site and a production ready output that can be copied directly into Eloqua, Marketo or Adobe Experience Manager.
+4. Separate output of CSS file and Javascript file incase you want to upload these instead of using the injected inline version.
+5. Support for relative vs absolute URLs for assets. **This is likely unqiue to each project, but should help get you started.**
+
+For more details on what is happening within the gulp, I have added more details comments to the [gulpfile](https://raw.githubusercontent.com/DesignyourCode/enterprise-integration-boilerplate/master/gulpfile.js) itself.
 
 
 
+## To Do's
+
+1. Improve gulp script so that you don't have to wait as long or save twice.
+
+## 
 
 ## Licence
 
