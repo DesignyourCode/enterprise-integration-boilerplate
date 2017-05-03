@@ -2,6 +2,9 @@
 
 A simple gulp boilerplate for helping developers integrate their code with Enterprise Marketing Automation Software, like Adobe Experience Manager, Eloqua or Marketo.
 
+**View boilerplate index:** https://designyourcode.github.io/enterprise-integration-boilerplate/dist/
+**View boilerplate readme:** https://designyourcode.github.io/enterprise-integration-boilerplate/
+
 
 
 ## Conditions
